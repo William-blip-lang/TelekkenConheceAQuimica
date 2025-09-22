@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissulfeto de Tungstênio - O Composto Rei</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dissulfeto de Tungstênio</h1>
+        <nav>
+            <ul>
+                <li><a href="#aplicacao">Introdução ao melhor composto de todos os tempos</a></li>
+                <li><a href="#modelo">Modelo Atômico</a></li>
+                <li><a href="#informacoes">Informações Científicas</a></li>
+                <li><a href="#questionario">Questionário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="aplicacao" id="aplicacao">
+            <h2>O que é o incrível Dissulfeto de Tungstênio?</h2>
+            <div class="texto">
+                <p>Compostos químicos inorgânicos! Todos nós amamos eles. E todos nós temos nosso favorito. Alguns preferem o Dióxido de Enxofre, outros são mais fãs do Fosfina, o Hidreto de Fósforo. Infelizmente, todos esses compostos são "paias". Não possuem "aura", como as crianças com cérebros corrompidos pelos celulares diriam. A verdadeira escolha certa é o incrível, sensacional, inacreditável Dissulfeto de Tungstênio. Uma substância fenomenal. Aprender sobre esse composto perfeito é desbloquear um outro nível na sua alma. As engrenagens do seu cérebro, mantidas presas pela ferrugem do tédio, serão lubrificadas a seco pelo pó preto perfeito, emblemático do composto.</p>
+                <p>Isso é o principal propósito do Composto Rei; o lubrificante seco mais eficaz do planeta. Quando os lubrificantes líquidos são muitos fracos, o Dissulfeto se apresenta pra batalha. Ele é usado como um pó entre as engrenagens da máquina, atacando a fricção. Ele tambem é usado para conduzir energia, porque ele é incrível de todos os jeitos.</p>
+                <img src="../imagens/material1.jpeg" alt="que_pó_lindo">
+            </div>
+        </section>
+
+        <section class="modelo" id="modelo">
+            <h2>Modelo Atômico Interativo 3D</h2>
+            <div class="texto">
+                <p>Explore a estrutura tridimensional do WS₂ no modelo interativo abaixo. Utilize os controles para rotacionar, fazer zoom e ajustar a visualização:</p>
+                
+                <div id="model-container">
+                    <div class="loading">Carregando modelo 3D...</div>
+                    
+                    <div class="controls-panel">
+                        <h5 style="color: #fff; margin-bottom: 15px;">Controles</h5>
+                        
+                        <div class="control-group">
+                            <label>Número de Camadas:</label>
+                            <input type="range" id="layers" min="1" max="5" value="3">
+                            <span style="color: #ccc;" id="layers-value">3</span>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label>Rotação Automática:</label>
+                            <input type="checkbox" id="autoRotate" checked> Ativar
+                        </div>
+                        
+                        <div class="control-group">
+                            <label>Visualização:</label>
+                            <input type="checkbox" id="showBonds" checked> Mostrar Ligações
+                        </div>
+                        
+                        <div class="control-group">
+                            <label>Transparência:</label>
+                            <input type="range" id="opacity" min="0.3" max="1" step="0.1" value="1">
+                        </div>
+                        
+                        <div style="margin-top: 15px;">
+                            <button class="btn-control" onclick="resetView()">Reset</button>
+                            <button class="btn-control" onclick="toggleAnimation()">Pausar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="info-panel">
+                        <h6 style="margin-bottom: 10px;">Informações da Estrutura</h6>
+                        <div style="font-size: 0.9rem;">
+                            <div>Fórmula: WS₂</div>
+                            <div>Sistema: Hexagonal</div>
+                            <div>Grupo: P6₃/mmc</div>
+                            <div id="atom-count">Átomos: 9 (3W + 6S)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="color-dot tungsten"></div>
+                        <span>Tungstênio (W)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-dot sulfur"></div>
+                        <span>Enxofre (S)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="informacoes" id="informacoes">
+            <h2>Informações Científicas</h2>
+            <div class="texto">
+                <p>O dissulfeto de tungstênio (WS₂) é um sólido cristalino composto por átomos de tungstênio e enxofre, classificado como um dicalcogeneto de metal de transição. Sua estrutura é lamelar, formada por camadas de átomos de tungstênio entre duas camadas de enxofre, unidas por forças de van der Waals. Esse arranjo permite que o material apresente anisotropia em suas propriedades físicas e seja facilmente esfoliado até a escala nanométrica.</p>
+
+                <p>Em sua forma volumosa, o WS₂ apresenta comportamento semicondutor indireto, mas quando reduzido a monocamada passa a exibir um semicondutor direto, com gap de banda em torno de 2,0 eV. Do ponto de vista físico-químico, o WS₂ apresenta alta estabilidade térmica e química, mantendo sua estrutura cristalina mesmo em temperaturas elevadas e em atmosferas inertes.</p>
+
+                <p>Possui também propriedades ópticas interessantes, como forte absorção de luz na faixa visível e emissão fotoluminescente na monocamada, fenômenos diretamente ligados à sua transição de gap de banda. Além disso, sua condutividade elétrica e propriedades eletrônicas dependem fortemente do número de camadas, o que o torna um material com características ajustáveis a partir da espessura.</p>
+            </div>
+        </section>
+
+        <section class="questionario" id="questionario">
+            <h2>Questionário Titânico - Teste seus conhecimentos sobre o Dissulfeto de Titânio!</h2>
+            <div class="texto">
+                <div class="quiz-container">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <p class="progress-text">Questão <span id="current-question">1</span> de <span id="total-questions">4</span></p>
+                    </div>
+
+
+                    <div class="question-card active" id="question-1">
+                        <h3>🧪 Questão 1: Fórmula Química</h3>
+                        <p class="question-text">Qual é a fórmula química correta do Dissulfeto de Titãnio?</p>
+                        
+                        <div class="options">
+                            <button class="option-btn" data-answer="wrong">WO₂</button>
+                            <button class="option-btn" data-answer="wrong">W₂S</button>
+                            <button class="option-btn" data-answer="correct">WS₂</button>
+                            <button class="option-btn" data-answer="wrong">WS₃</button>
+                        </div>
+
+                        <div class="feedback correct-feedback">
+                            <div class="celebration">🎉 EXCELENTE! 🎉</div>
+                            <p>Isso mesmo! WS₂ é a fórmula do Dissulfeto de Tungstênio - o Composto Rei em toda sua glória!</p>
+                            
+                            <div class="extra-info">
+                                <h4>📚 Curiosidade sobre a Fórmula:</h4>
+                                <p>O "2" em WS₂ indica que para cada átomo de tungstênio (W) há dois átomos de enxofre (S). Esta proporção é fundamental para a estrutura em camadas que torna este material tão especial! A estrutura forma um "sanduíche" onde o tungstênio fica no meio de duas camadas de enxofre.</p>
+                                <div class="formula-visual">
+                                    <div class="atom sulfur-atom">S</div>
+                                    <div class="atom tungsten-atom">W</div>
+                                    <div class="atom sulfur-atom">S</div>
+                                </div>
+                            </div>
+                            
+                            <button class="next-btn" onclick="nextQuestion()">Continuar para próxima questão! 🚀</button>
+                        </div>
+
+                        <div class="feedback wrong-feedback">
+                            <div class="try-again">❌ Ops! Não é bem assim...</div>
+                            <p>Bah meu tais errando coisa facil! Tente novamente - lembre-se que é DISsulfeto, ou seja, tem 2 átomos de enxofre.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="question-card" id="question-2">
+                        <h3>⚗️ Questão 2: Estrutura Cristalina</h3>
+                        <p class="question-text">Como é a estrutura cristalina do magnífico WS₂?</p>
+                        
+                        <div class="options">
+                            <button class="option-btn" data-answer="wrong">Estrutura cúbica simples</button>
+                            <button class="option-btn" data-answer="correct">Estrutura em camadas (lamelar)</button>
+                            <button class="option-btn" data-answer="wrong">Estrutura tetraédrica</button>
+                            <button class="option-btn" data-answer="wrong">Estrutura octaédrica</button>
+                        </div>
+
+                        <div class="feedback correct-feedback">
+                            <div class="celebration">🏆 FANTÁSTICO! 🏆</div>
+                            <p>Perfeito! A estrutura lamelar é o que torna o WS₂ tão especial e versátil!</p>
+                            
+                            <div class="extra-info">
+                                <h4>🔬 Por que a estrutura lamelar é revolucionária:</h4>
+                                <p>As camadas são mantidas juntas por forças fracas de van der Waals, permitindo que deslizem facilmente uma sobre a outra. É exatamente isso que faz do WS₂ um lubrificante sólido excepcional!</p>
+                                
+                                <div class="layer-demo">
+                                    <div class="layer">Camada de Enxofre</div>
+                                    <div class="layer tungsten-layer">Camada de Tungstênio</div>
+                                    <div class="layer">Camada de Enxofre</div>
+                                    <div class="van-der-waals">← Forças de van der Waals →</div>
+                                    <div class="layer">Camada de Enxofre</div>
+                                    <div class="layer tungsten-layer">Camada de Tungstênio</div>
+                                    <div class="layer">Camada de Enxofre</div>
+                                </div>
+                                
+                                <p>Quando reduzido a uma única camada, o WS₂ vira um semicondutor direto - tecnologia de ponta!</p>
+                            </div>
+                            
+                            <button class="next-btn" onclick="nextQuestion()">Vamos para a próxima! 💪</button>
+                        </div>
+
+                        <div class="feedback wrong-feedback">
+                            <div class="try-again">🤔 Quase lá!</div>
+                            <p>Pense no motivo pelo qual o WS₂ é um excelente lubrificante... As camadas precisam deslizar!</p>
+                        </div>
+                    </div>
+
+
+                    <div class="question-card" id="question-3">
+                        <h3>🏭 Questão 3: Aplicação Principal</h3>
+                        <p class="question-text">Qual é a aplicação mais famosa do nosso Composto Rei?</p>
+                        
+                        <div class="options">
+                            <button class="option-btn" data-answer="wrong">Pigmento para tintas</button>
+                            <button class="option-btn" data-answer="correct">Lubrificante sólido de alta performance</button>
+                            <button class="option-btn" data-answer="wrong">Aditivo alimentar</button>
+                            <button class="option-btn" data-answer="wrong">Material para construção</button>
+                        </div>
+
+                        <div class="feedback correct-feedback">
+                            <div class="celebration">🎯 SENSACIONAL! 🎯</div>
+                            <p>Exato! O WS₂ reina supremo como lubrificante sólido quando os líquidos falham!</p>
+                            
+                            <div class="extra-info">
+                                <h4>⚙️ O Poder do Lubrificante Supremo:</h4>
+                                <p>O WS₂ é usado em condições extremas onde lubrificantes líquidos não conseguem atuar:</p>
+                                
+                                <div class="applications">
+                                    <div class="app-item">🚀 <strong>Indústria Aeroespacial:</strong> Satélites e naves espaciais</div>
+                                    <div class="app-item">🏭 <strong>Alta Temperatura:</strong> Fornos industriais e motores</div>
+                                    <div class="app-item">⚡ <strong>Alto Vácuo:</strong> Equipamentos científicos</div>
+                                    <div class="app-item">🔧 <strong>Pressão Extrema:</strong> Equipamentos pesados</div>
+                                </div>
+                                
+                                <div class="lubrication-demo">
+                                    <div class="gear gear1">⚙️</div>
+                                    <div class="ws2-particles">✨ WS₂ ✨</div>
+                                    <div class="gear gear2">⚙️</div>
+                                    <p style="margin-top: 10px;">As camadas do WS₂ deslizam, reduzindo o atrito!</p>
+                                </div>
+                            </div>
+                            
+                            <button class="next-btn" onclick="nextQuestion()">Última questão chegando! 🔥</button>
+                        </div>
+
+                        <div class="feedback wrong-feedback">
+                            <div class="try-again">⚠️ Não é isso!</div>
+                            <p>Lembre-se: o texto fala sobre "atacar a fricção" e "quando os lubrificantes líquidos são muito fracos"...</p>
+                        </div>
+                    </div>
+
+                    <div class="question-card" id="question-4">
+                        <h3>🔬 Questão 4: Propriedade Semicondutora</h3>
+                        <p class="question-text">O que acontece com as propriedades semicondutoras do WS₂ quando ele é reduzido a uma única camada (monocamada)?</p>
+                        
+                        <div class="options">
+                            <button class="option-btn" data-answer="wrong">Perde totalmente as propriedades semicondutoras</button>
+                            <button class="option-btn" data-answer="wrong">Mantém as mesmas propriedades</button>
+                            <button class="option-btn" data-answer="correct">Muda de semicondutor indireto para direto</button>
+                            <button class="option-btn" data-answer="wrong">Vira um supercondutor</button>
+                        </div>
+
+                        <div class="feedback correct-feedback">
+                            <div class="celebration">🌟 MAGNÍFICO! VOCÊ É UM MESTRE DO WS₂! 🌟</div>
+                            <p>Incrível! Você dominou todos os segredos do Dissulfeto de Titanio!</p>
+                            
+                            <div class="extra-info">
+                                <h4>🚀 A Revolução da Monocamada:</h4>
+                                <p>Esta mudança de semicondutor indireto para direto é revolucionária na tecnologia:</p>
+                                
+                                <div class="semiconductor-comparison">
+                                    <div class="bulk-ws2">
+                                        <h5>WS₂ Volumoso (Bulk)</h5>
+                                        <div class="property">📡 Semicondutor INDIRETO</div>
+                                        <div class="property">🔋 Gap: ~1.4 eV</div>
+                                        <div class="property">💡 Pouca emissão de luz</div>
+                                    </div>
+                                    
+                                    <div class="arrow">→</div>
+                                    
+                                    <div class="mono-ws2">
+                                        <h5>WS₂ Monocamada</h5>
+                                        <div class="property highlight">⚡ Semicondutor DIRETO</div>
+                                        <div class="property highlight">🔆 Gap: ~2.0 eV</div>
+                                        <div class="property highlight">✨ Forte fotoluminescência</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="future-tech">
+                                    <h5>🎯 Aplicações Futuristas:</h5>
+                                    <div class="tech-grid">
+                                        <div class="tech-item">📱 Displays flexíveis</div>
+                                        <div class="tech-item">💡 LEDs eficientes</div>
+                                        <div class="tech-item">🔋 Células solares</div>
+                                        <div class="tech-item">🧠 Computação quântica</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="next-btn" onclick="finishQuiz()">🏆 Ver Resultado Final! 🏆</button>
+                        </div>
+
+                        <div class="feedback wrong-feedback">
+                            <div class="try-again">🎓 Pense bem!</div>
+                            <p>Esta propriedade é o que torna o WS₂ promissor para aplicações eletrônicas avançadas...</p>
+                        </div>
+                    </div>
+
+
+                    <div class="question-card" id="final-result">
+                        <div class="final-celebration">
+                            <h2>🎉 PARABÉNS! 🎉</h2>
+                            <h3>Você é oficialmente um especialista!</h3>
+                            
+                            <div class="achievement">
+                                <div class="trophy">🏆</div>
+                                <h4>Certificado de Mestre do WS₂</h4>
+                                <p>Você demonstrou conhecimento excepcional sobre:</p>
+                                <ul>
+                                    <li>✅ Fórmula química correta</li>
+                                    <li>✅ Estrutura cristalina lamelar</li>
+                                    <li>✅ Aplicações como lubrificante supremo</li>
+                                    <li>✅ Propriedades semicondutoras avançadas</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="final-message">
+                                <p>Agora você entende por que o Dissulfeto de Tungstênio é verdadeiramente o <strong>"Melhor composto de todos"</strong>! 👑</p>
+                                <p>Das engrenagens lubrificadas às tecnologias do futuro, o WS₂ reina supremo!</p>
+                            </div>
+                            
+                            <button class="restart-btn" onclick="restartQuiz()">🔄 Fazer o Quiz Novamente</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Modelo Atômico WS₂. Desenvolvido para fins educacionais.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
